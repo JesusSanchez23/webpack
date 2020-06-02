@@ -1,0 +1,35 @@
+/////////////////////////
+
+APLICAR CAMBIOS DINAMOCIOS EN HTML
+
+
+HAY UN problemas
+webpack solo guarda los archivos JS, entonces para que también guarde el HTML, tenemos que descargar dos paquetes
+
+npm i(o install) -D(o --save-dev) html-loader html-webpack-plugin
+
+estos se cargaran a nuestro archivo JSON
+
+despues se crea un archivo de wconfiguración de webpack
+
+webpack.config.js
+
+en este se configura algo, en mi caso era diferente al de fernando por la version, y este creara un archivo html y js en la carpeta dist.
+
+
+para aplicar cambio hay un probelma tenemos que hacer constantantemente:
+
+npm run build
+
+para evitarlo hacemos lo siguiente:
+
+npm install --save-dev webpack-dev-server
+npm i -D webpack-dev-server
+
+se aplican cambios al JSON añadiento otro script y a la confuiguracion de webpack añadiendo que se abra por defecto por chrome aunque eso no me lo respeta jajja
+
+
+si tienes ucupado el puerto 8080 para el server puedes cambiarlo en su script de JSON CON:
+
+--port = 8081,
+

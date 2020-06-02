@@ -1,0 +1,36 @@
+lo instalamos
+
+npm install --save-dev babel-loader @babel/core
+
+lo agregamos a la configuracion de webpack
+
+{ test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+
+creamos un archivo de babel en src
+.babelrc
+
+instalamos otro paquete
+
+npm install babel-preset-minify --save-dev
+
+colocas unas lineas de codifggo en el archivo babelñ creado, esto hace que mucho del codigo de JS este en una sola linea.
+
+para que todo este minimizado y sin comentario descargamos otro paquete
+
+
+npm install babel-minify-webpack-plugin --save-dev
+
+
+creamos otra constante y otro plugin al archivo de produccion
+
+esto Permite ver todo en una sola linea.
+
+///QUITAR CONMSTANTES Y HACER QUE SEA COMPATIBLE CON ANTERIORES JS
+
+instalamos optro paquete
+
+npm install --save-dev @babel/preset-env
+
+agragamos una configuracion al archivo .babelrc
+
+esto quita las constantes y permite mas compatibilidad.

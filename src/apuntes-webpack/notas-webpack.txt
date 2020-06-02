@@ -1,0 +1,35 @@
+instalar WEBPACK
+
+
+npm install webpack webpack-cli --save-dev
+
+comando para hacer que nuestros archivos JS se encripten de cierta manera y sea mas dificil interpretarlos
+
+en package.json despues de script echo crear
+
+"build": "webpack"
+
+despues en la terminal de comandos
+
+npm run build
+
+esto creara otra parpeta y dentro de ella los archivos JS tipados.
+
+
+
+Para importar scripts 
+en el lugar donde la quieres importar:
+
+import {nombreFuncion o Clase} from '../carpeta/archivo'
+
+en donde tienes el script completo colocar EXPORT antes de iniciar la funcion o clase para evitar problemas futuros.
+
+
+
+
+los modos development y production
+
+mode:'development' permite guaradr con comentarios
+mode:'production' guarda todo en linea y sin comentarios
+
+mi prettier los acomoda en varias lineas xD

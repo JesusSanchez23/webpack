@@ -1,0 +1,17 @@
+Al igual que con HTML con css tenemos que descargar dependencias:
+
+
+
+npm install -D css-loader style-loader
+
+al hacerlo en el documento js que en mi caso es components en donde hacer exportación al index hacres la importacion del css
+
+import '../css/components.css';
+
+Despues agregas los cambios al archivo de configuración del webpack
+
+inicias los siguientes comandos
+
+npm run build   // CREAR LA CARPETA DIST CON CSS INCLUIDO
+
+npm start // CREAR EL SERVIDOR

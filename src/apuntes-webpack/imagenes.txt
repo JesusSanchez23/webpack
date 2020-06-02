@@ -1,0 +1,13 @@
+Despues de configurar para htmol, css y JS falta para las imageens, da error si intentas insertar una imagen y construir la carpeta dist ademas de cargar el servidor.
+
+
+para esto:
+
+instalamos 
+
+npm i -D file-loader
+
+
+despues de esto agregamos otro test a nuetsra configuración de webpack y listo
+Solo queda cargar dist y el servidor otra vez.
+

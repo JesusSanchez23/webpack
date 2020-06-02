@@ -1,0 +1,7 @@
+configuracion global
+
+git config --global user.name "jesus"
+
+git config --global user.email "jesus8347@gmail.com"
+
+git config --global color.ui auto

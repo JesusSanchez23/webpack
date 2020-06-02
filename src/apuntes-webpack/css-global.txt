@@ -1,0 +1,27 @@
+Primero lo importamos en index.js
+
+import './style.css';
+
+tenemos que descargar una dependencia 
+
+npm install -D mini-css-extract-plugin
+
+
+configuramos el plugin en el archivo de webpack, podemos usar contentHash para crear nuemeros aleatorios y que no se guarde ne la cache del navegador
+
+
+npm run build
+npm start
+
+y todo craga perfectamente
+
+
+/////////////////////
+
+PARA COMPRIUMIR TODO EN UNA SOLA LINEA
+
+npm i -D optimize-css-assets-webpack-plugin
+
+creamos otra constante en la configuracion del webpack y agregamos este plugin, estara listo y unira todo en una sola linea ademas de eliminar los comentarios, a mi no me funciona por prettier xD
+
+si funcviona solo cambia a modo production Xd
